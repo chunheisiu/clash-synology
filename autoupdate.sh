@@ -9,7 +9,7 @@ get_latest_release() {
 set -e $1
 
 latest_release_tag=`get_latest_release Dreamacro/clash`
-ver=`/usr/bin/clash -v`
+ver=`/opt/bin/clash -v`
 arch=`uname -m`
 [ $arch == 'x86_64' ] && board_id='amd64';
 [ $arch == 'aarch64' ] && board_id='armv8';

@@ -18,12 +18,12 @@
 wget https://github.com/Dreamacro/clash/releases/download/v1.10.0/clash-linux-armv8-v1.10.0.gz
 ```
 
-2. 解压
+2. 解压（请根据下载的文件名进行替换）
 ```bash
 gzip -d clash-linux-armv8-v1.10.0.gz
 ```
 
-3. 安装到系统 PATH
+3. 安装到系统 PATH（请根据下载的文件名进行替换）
 ```bash
 chmod +x clash-linux-armv8-v1.10.0
 mv clash-linux-armv8-v1.10.0 /usr/bin/clash

@@ -32,7 +32,7 @@ mv clash-linux-armv8-v1.10.0 /usr/bin/clash
 ## 通过脚本安装clash（测试）
 仅在DS118/DS218机型（armv8架构）测试通过，
 ```bash
-wget -qO- https://raw.githubusercontent.com/412999826/clash-synology/raw/main/install.sh --no-check-certificate| bash
+wget -qO- https://raw.githubusercontent.com/412999826/clash-synology/raw/main/install.sh| bash
 ```
 
 ## 创建配置文件及安装控制面板
@@ -202,5 +202,5 @@ iptables -t nat -A PREROUTING -p icmp -d 198.18.0.0/16 -j DNAT --to-destination 
 ## 一键更新clash脚本（测试）
 仅在DS118/DS218机型（armv8架构）测试通过，
 ```bash
-wget -qO- https://raw.githubusercontent.com/412999826/clash-synology/main/autoupdate.sh --no-check-certificate| bash
+wget -qO- https://raw.githubusercontent.com/412999826/clash-synology/main/autoupdate.sh| bash
 ```

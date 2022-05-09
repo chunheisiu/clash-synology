@@ -33,7 +33,6 @@ mv clash-linux-armv8-v1.10.0 /usr/bin/clash
 仅在DS118/DS218机型（armv8架构）测试通过，
 ```bash
 wget -qO- https://raw.githubusercontent.com/412999826/clash-synology/raw/main/install.sh --no-check-certificate| bash
-``| bash
 ```
 
 ## 创建配置文件及安装控制面板

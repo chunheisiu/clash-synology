@@ -25,5 +25,5 @@ wget https://github.com/Dreamacro/clash/releases/download/$latest_release_tag/cl
 gzip -d clash-linux-$board_id-$latest_release_tag.gz
 chmod +x clash-linux-$board_id-$latest_release_tag
 systemctl stop clash
-mv clash-linux-$board_id-$latest_release_tag /opt/bin/clash
+mv clash-linux-$board_id-$latest_release_tag /usr/bin/clash
 systemctl start clash

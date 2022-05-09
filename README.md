@@ -198,3 +198,9 @@ iptables -t nat -I PREROUTING -p udp --dport 53 -j REDIRECT --to-port "$dns_port
 # --to-destination 设置为一个可达的地址即可
 iptables -t nat -A PREROUTING -p icmp -d 198.18.0.0/16 -j DNAT --to-destination 192.168.1.1
 ```
+
+## 一键更新clash脚本（测试）
+仅在DS118/DS218机型（armv8）架构测试通过，
+```bash
+wget -qO- https://github.com/412999826/clash-synology/raw/main/autoupdate.sh | bash
+```

@@ -18,4 +18,4 @@ ver=`/opt/bin/clash -v`
 wget https://github.com/Dreamacro/clash/releases/download/$latest_release_tag/clash-linux-$board_id-$latest_release_tag.gz
 gzip -d clash-linux-$board_id-$latest_release_tag.gz
 chmod +x clash-linux-$board_id-$latest_release_tag
-mv clash-linux-$board_id-$latest_release_tag /opt/bin/clash
+mv clash-linux-$board_id-$latest_release_tag /usr/bin/clash

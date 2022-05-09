@@ -29,9 +29,7 @@ chmod +x clash-linux-armv8-v1.10.0
 mv clash-linux-armv8-v1.10.0 /usr/bin/clash
 ```
 
-## 安装clash-通过脚本（测试）
-
-运行一键安装脚本
+## 通过脚本安装clash（测试）
 仅在DS118/DS218机型（armv8）架构测试通过，
 ```bash
 wget -qO- https://github.com/412999826/clash-synology/raw/main/install.sh | bash

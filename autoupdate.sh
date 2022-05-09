@@ -21,7 +21,7 @@ if [[ $ver =~ $latest_release_tag ]]; then
 else
 	echo 准备更新到$latest_release_tag
 fi
-wget https://github.com/Dreamacro/clash/releases/download/$latest_release_tag/clash-linux-$board_id-$latest_release_tag.gz
+wget -q https://github.com/Dreamacro/clash/releases/download/$latest_release_tag/clash-linux-$board_id-$latest_release_tag.gz
 gzip -d clash-linux-$board_id-$latest_release_tag.gz
 chmod +x clash-linux-$board_id-$latest_release_tag
 systemctl stop clash

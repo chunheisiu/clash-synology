@@ -113,8 +113,8 @@ WantedBy=multi-user.target
 
 2. 立即运行并设置系统启动时运行
 ```bash
-systemctl start udpxy
-systemctl enable udpxy
+systemctl start clash
+systemctl enable clash
 ```
 
 ## 配置防火墙转发规则(iptables)

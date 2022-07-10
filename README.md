@@ -192,6 +192,11 @@ iptables -t mangle -A OUTPUT -p udp -d "$fake_ip_range" -j MARK --set-mark 1
 # DNS 相关配置
 ## 拦截外部upd的53端口流量交给clash_dns规则链处理
 iptables -t nat -I PREROUTING -p udp --dport 53 -j REDIRECT --to-port "$dns_port"
+
+# 修复 ICMP(ping)
+# 这并不能保证 ping 结果有效(clash 不支持转发 ICMP), 只是让它有返回结果而已
+# --to-destination 设置为一个可达的地址即可
+iptables -t nat -A PREROUTING -p icmp -d "$fake_ip_range" -j DNAT --to-destination 192.168.1.1
 ```
 
 ## 一键更新clash脚本（测试）

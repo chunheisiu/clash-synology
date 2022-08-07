@@ -84,6 +84,11 @@ dns:
   fallback:
     - tls://8.8.4.4:853
     - https://dns.pub/dns-query
+# 域名劫持设置
+hosts:
+  #clash.dev: 192.168.1.1
+  #'.dev': 127.0.0.1
+    
 ```
 
 ## 设置clash自启动服务
